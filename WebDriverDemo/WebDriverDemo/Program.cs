@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Firefox; //Firefox namespace
+using OpenQA.Selenium.IE; //IE namespace
 
 namespace WebDriverDemo
 {
@@ -13,7 +14,7 @@ namespace WebDriverDemo
     {
         static void Main(string[] args)
         {
-            IWebDriver driver = new FirefoxDriver();
+            IWebDriver driver = new InternetExplorerDriver();
             driver.Url = "http://www.peddle.com";
         }
     }
