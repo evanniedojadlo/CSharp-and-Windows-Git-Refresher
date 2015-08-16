@@ -15,8 +15,11 @@ namespace WebDriverDemo
     {
         static void Main(string[] args)
         {
-            IWebDriver driver = new InternetExplorerDriver(@"C:\Users\Evan\Documents\github\CSharp-and-Windows-Git-Refresher\WebDriverDemo\");
-            driver.Url = "http://www.peddle.com";
+            IWebDriver driver = new ChromeDriver(@"C:\Users\Evan\Documents\github\CSharp-and-Windows-Git-Refresher\WebDriverDemo\");
+            driver.Url = "http://www.google.com";
+
+            var searchBox = driver.FindElement(By.Id("lst-ib"));
+            searchBox.SendKeys("Peddle");
         }
     }
 }
