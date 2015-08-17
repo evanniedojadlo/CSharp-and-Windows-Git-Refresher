@@ -20,6 +20,12 @@ namespace WebDriverDemo
 
             var searchBox = driver.FindElement(By.Id("lst-ib"));
             searchBox.SendKeys("Peddle");
+
+            var searchButton = driver.FindElement(By.ClassName("lsb"));
+            searchButton.Click();
+
+            //var imagesLink = driver.FindElements(By.ClassName("q qs"))[0];
+            //imagesLink.Click();
         }
     }
 }
