@@ -24,7 +24,9 @@ namespace WebDriverDemo
             var searchButton = driver.FindElement(By.ClassName("lsb"));
             searchButton.Click();
 
-            //var imagesLink = driver.FindElements(By.ClassName("q qs"))[0];
+            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10)); //if it doesn't find the element wait 10 seconds or throw exception
+
+            //var imagesLink = driver.FindElements(By.LinkText("Sell Your Car With Peddle"));
             //imagesLink.Click();
         }
     }
