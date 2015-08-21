@@ -26,8 +26,14 @@ namespace WebDriverDemo
 
             driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10)); //if it doesn't find the element wait 10 seconds or throw exception
 
-            var imagesLink = driver.FindElements(By.CssSelector("a.q.qs"))[0];
-            imagesLink.Click();
+            //var imagesLink = driver.FindElements(By.CssSelector("a.q.qs"))[0];
+            //imagesLink.Click();
+
+            var selectPeddleLink = driver.FindElement(By.LinkText("Peddle: Sell Your Car Instantly"));
+            selectPeddleLink.Click();
+
+
+            //Assertion will verify text on page
         }
     }
 }
