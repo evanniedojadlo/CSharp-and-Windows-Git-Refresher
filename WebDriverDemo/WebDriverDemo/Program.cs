@@ -32,8 +32,11 @@ namespace WebDriverDemo
             var selectPeddleLink = driver.FindElement(By.LinkText("Peddle: Sell Your Car Instantly"));
             selectPeddleLink.Click();
 
+            var validateHeaderText = driver.(By.Name("Car selling as it should be.")); //this just finds the text we want to assert true/false
 
-            //Assertion will verify text on page
+            Assert.IsTrue(text.Contains("Test"));
+
+            
         }
     }
 }
