@@ -32,9 +32,9 @@ namespace WebDriverDemo
             var selectPeddleLink = driver.FindElement(By.LinkText("Peddle: Sell Your Car Instantly"));
             selectPeddleLink.Click();
 
-            var validateHeaderText = driver.(By.Name("Car selling as it should be.")); //this just finds the text we want to assert true/false
+            //var validateHeaderText = driver.(By.Name("Car selling as it should be.")); //this just finds the text we want to assert true/false
 
-            Assert.IsTrue(text.Contains("Test"));
+            //Assert is not supported with just using the Webdriver API, we need a framework like NUnit var assertIndexCopy = driver.Assert.IsTrue(text.Contains("Test"));
 
             
         }
