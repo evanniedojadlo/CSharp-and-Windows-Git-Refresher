@@ -13,7 +13,8 @@ namespace WebDriverAPIreview
     {
         static void Main(string[] args)
         {
-
+            IWebDriver driver = new FirefoxDriver();
+            driver.Url = "http://www.google.com";
         }
     }
 }
